@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=League+Spartan:wght@300&family=Montserrat:wght@500&family=Pacifico&family=Playpen+Sans:wght@500&family=Poppins:wght@400;500;600;700&display=swap');
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#sec_1 {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 90vh;
+    justify-content: space-evenly;
+}
+
+.heading {
+    color: white;
+    /* background-color: blue; */
+    width: 45vw;
+    height: 50vh;
+    text-align: center;
+    font-size: 35px;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    padding: 40px;
+    margin-top: 13%;
+}
+
+.image img {
+    /* background-color: burlywood; */
+    margin-top: 10%;
+
+}
+/* <================= section 2 ==============> */
+#sec_2{
+   
+    width: 70vw;
+    line-height: 2;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    justify-content: center;
+    padding: 10%;
+    margin-left: 17%;
+    
+}
+#sec_2 #break {
+    border: none;
+    height: 3px;
+    background-color: #000; 
+}
+
+/* <================= books ==============> */
+.books{
+   width: 100%;
+   
+   height: 100%;
+   background-color: black;
+    justify-content: space-between;
+}
+#book-heading{
+    color: white;
+    margin-left: 40%;
+    letter-spacing: 2px;
+  
+ 
+}
+#book1-sec{
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly ;
+}
+#book2-sec{
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly ;
+    margin-top: 10%;
+}
+.image-container {
+    position: relative;
+    width: 300px; /* Adjust the size as needed */
+    overflow: hidden;
+   
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s; /* Add a smooth hover transition */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change the background color and opacity as needed */
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .text {
+    color: white; /* Text color */
+    font-size: 16px; /* Text size */
+    /* Add other text styles (font-family, padding, etc.) as needed */
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1); /* Scale up the image on hover (adjust the scaling factor as needed) */
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1; /* Show the overlay on hover */
+  }
+.footer{
+    /* width: 100%; */
+   margin: 20px;
+   font-size:x-large;
+margin-left: 35%;
+}  
+.footer a{
+    color: black;
+}
+
+/* responsive */
+
+@media (max-width: 1170px) {
+   .heading{
+   width: 45vw;
+  margin-top: 10px;
+   }
+}
+@media (max-width: 960px) {
+    #book1-sec{
+        display: block;
+     padding-left: 35%;
+      
+    }
+    #book2-sec{
+        display: block;
+        padding-left: 35%;
+    }
+    .image-container{
+        margin-top: 10%;
+    }
+ }
+
+ @media (max-width: 850px) {
+    #sec_1{
+        display: block;
+        height: 90%;
+    }
+    .heading{
+        width: 100%;
+    }
+    .footer{
+        margin: 20px;
+margin-left: 22%;
+        width: 65%;
+        /* background-color: aqua; */
+    }}
+
+    @media (max-width: 540px) {
+        .heading{
+           height: 50%;
+        }
+        #book-heading{
+            margin: 2px;
+            text-align: center;
+   
+           }
+           #book1-sec{
+            width: 100%;
+            padding: 50px;
+            padding-left: 9%;
+           
+
+        }
+        #book2-sec{
+            width: 100%;
+            padding: 50px;
+            padding-left: 9%;
+        
+        }
+        .image-container{
+            width: 100%;
+ 
+         }
+        /* .image-container img{
+            width: 70%;
+        
+        } */
+        .text {
+            font-size: 20px;
+            text-align: center;
+        
+        }
+    }
+
+    @media (max-width: 412px) {
+        .footer{
+            margin: 5px;
+            width: 100vw;  
+        }
+        .image-container{
+           width: 100%;
+
+        }
+        .image-container img{
+            width: 100%;
+        }
+        #book1-sec{
+            width: 100%;
+            padding: 2px;
+
+        }
+        #book2-sec{
+            width: 100%;
+            padding: 2px;
+
+        }
+        #book-heading{
+         margin: 2px;
+         text-align: center;
+
+        }
+        .heading{
+            height: 50%;
+        }
+ }
+
+ @media (max-width: 1240px) {
+    .heading{
+        width: 50%;
+        padding: 10px;
+        margin-top: 10%;
+    }
+ }
