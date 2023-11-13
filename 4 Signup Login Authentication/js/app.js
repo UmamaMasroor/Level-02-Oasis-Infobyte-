@@ -28,12 +28,14 @@ let getpass = document.querySelector('#spassword')
 
             const user = userCredential.user;
             console.log(user);
+            console.log("user created successfully!");
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
             console.log('error code is', errorCode)
-            console.log('error message is', errorMessage);;
+            console.log('error message is', errorMessage)
+            console.log("user already logged-in!");
         });
 })
 

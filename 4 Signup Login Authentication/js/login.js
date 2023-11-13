@@ -19,22 +19,53 @@ const auth = getAuth(app);
 
 // login
 
-let logbtn = document.querySelector('#lbtn')
-logbtn.addEventListener('click',()=>{
+// let logbtn = document.querySelector('#lbtn')
+// logbtn.addEventListener('click',()=>{
 
-let email = document.querySelector('#lemail')
-let password = document.querySelector('#lpassword')
+// let email = document.querySelector('#lemail')
+// let password = document.querySelector('#lpassword')
+
+//     signInWithEmailAndPassword(auth, email.value, password.value)
+//     .then((userCredential) => {
+//       // Signed in 
+//       const user = userCredential.user;
+//      console.log(user.email);
+//     })
+//     .catch((error) => {
+//       const errorCode = error.code;
+//       const errorMessage = error.message;
+//       console.log('login error',errorCode);
+//       console.log('login error message',errorMessage);
+//     });
+// })
+
+
+
+
+
+// login
+
+let logbtn = document.querySelector('#lbtn');
+logbtn.addEventListener('click', () => {
+
+    let email = document.querySelector('#lemail');
+    let password = document.querySelector('#lpassword');
 
     signInWithEmailAndPassword(auth, email.value, password.value)
-    .then((userCredential) => {
-      // Signed in 
-      const user = userCredential.user;
-     console.log(user.email);
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log('login error',errorCode);
-      console.log('login error message',errorMessage);
-    });
+        .then((userCredential) => {
+            // Signed in 
+            const user = userCredential.user;
+            console.log(user.email);
+
+            // Redirect to another page upon successful login
+            window.location.href = "./welcome.html"; // Replace with the desired URL
+
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log('login error', errorCode);
+            console.log('login error message', errorMessage);
+        });
 })
+
