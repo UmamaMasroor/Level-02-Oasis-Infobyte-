@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=League+Spartan:wght@300&family=Montserrat:wght@500&family=Pacifico&family=Playpen+Sans:wght@500&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,300;1,700;1,800&family=Prompt:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to right, #ab8697,  #9595e6);
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  #login_form{
+    background-color:rgb(242, 216, 220);
+    box-shadow: 10px 10px 15px 2px grey;
+    width: 30vw;
+    height: 600px;
+    border-radius: 15px;
+    /* justify-content: center; */
+   padding: 30px;
+   /* align-content: center; */
+   text-align: center;
+  margin: 60px;
+  margin-left: 33%;
+ line-height: 60px;
+  }
+  #signup {
+    background: aliceblue;
+  }
+  #signup a {
+    text-decoration: none;
+    color: black;
+  }
+  #login{
+    background:linear-gradient(to right, #ab8697,  #9595e6); 
+  }
+  #login:hover{
+    color: #fff;
+    background: #9595e6;
+    transition: 1s;
+  }
+  #signup:hover{
+    color: #fff;
+    background-color: #9595e6;
+    transition: 1s;
+  }
+  #login,#signup{
+    width: 100px;
+    cursor: pointer;
+    height: 33px;
+    justify-content: center;
+    border: none;
+    color: black;
+/* margin-left: 60px; */
+font-size:medium;
+  }
+  #login_form input{
+   width: 80%;
+   border: none;
+   height: 30px;
+   padding: 20px;
+  }
+ 
+  #lbtn{
+    width: 100px;
+    cursor: pointer;
+    height: 33px;
+    justify-content: center;
+    border: none;
+    color: black;
+font-size:medium;
+background:linear-gradient(to right, #ab8697,  #9595e6); 
+  }
+
+  @media (max-width: 1293px) {
+    #login_form{
+      width: 50vw;
+      height: 70vh;
+    margin: 11%;
+    margin-left: 25%;
+     padding: 70px;
+    
+    }
+  }
+    
+  @media (max-width: 700px) {
+    #login_form{
+      width: 70vw;
+      height: 70vh;
+    margin: 13%;
+    /* justify-content: center; */
+  }
+
+  }
+  @media (max-width: 600px) {
+    #login_form{
+     /* width: 100%;
+    height: 90%; */
+      margin: 6%;
+      margin-top: 15%; 
+      width: 90vw;
+      height: 800px;
+      text-align: center;
+     font-size: xx-large;
+     padding: 50px;
+     justify-content: space-evenly;
+    
+    }
+    #login,#signup{
+      width: 50%;
+    font-size: 80%;
+      height: 43px;
+      justify-content: center;
+    }
+    #lbtn{
+      width: 50%;
+      font-size: 80%;
+      height: 43px;
+  }
+  #login_form input{
+    width: 80%;
+   
+    height: 70px;
+    font-size: large;
+    /* padding: 20px; */
+   }
+  }
